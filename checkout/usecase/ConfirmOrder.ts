@@ -7,7 +7,7 @@ export default class ConfirmOrder {
     console.log('order', input);
     const order = await this.orderRepository.get(input.orderId)
     if (!order)
-      throw Error(`order don't exists or invalid orderId`)
+      throw new Error(`order don't exists or invalid orderId`)
 
     if (input.status === 'success') {
       order.confirm();
