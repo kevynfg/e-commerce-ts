@@ -9,7 +9,7 @@ export default class ProcessPayment {
       status: 'success'
     }
     await this.queue.publish("paymentApproved", paymentApproved);
-    console.log('processed')
+    console.log('processed', paymentApproved)
   }
 }
 
