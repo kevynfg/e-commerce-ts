@@ -1,13 +1,13 @@
-CREATE TABLE IF NOT EXISTS commerce.product (
+CREATE TABLE IF NOT EXISTS product (
   product_id uuid,
   product_name text,
   value float
-)
+);
 
-CREATE TABLE IF NOT EXISTS commerce.order (
+CREATE TABLE IF NOT EXISTS order (
   order_id uuid,
-  product_id uui,
+  product_id uuid,
   email text,
   status text
-)
+);
 
